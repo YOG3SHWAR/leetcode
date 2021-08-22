@@ -5,13 +5,10 @@
  */
 
 // @lc code=start
-class Solution
-{
-public:
-    bool isPalindrome(int x)
-    {
-        if (x == 0)
-        {
+class Solution {
+   public:
+    bool isPalindrome(int x) {
+        if (x == 0) {
             return true;
         }
         if (x < 0 || x % 10 == 0)
@@ -19,8 +16,7 @@ public:
 
         int temp = 0;
         int preX = x;
-        while (x > temp)
-        {
+        while (x > temp) {
             int pop = x % 10;
             preX = x;
             x /= 10;
